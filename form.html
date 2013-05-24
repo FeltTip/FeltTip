@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Resource params </title>
+<script src="js/form.js"></script>
+
+</head>
+<body>
+
+<tr>
+    <td><p>Resource type:<td>
+    <td>
+		<select name="resource_type" onchange="resource_type(this);">
+			<option value="article">Article</option>
+			<option value="book">Book</option>
+			<option value="internet">Internet</option>
+		</select>
+	</td>
+</tr>
+
+<div id="articleName" class="articleName" style="visibility: hidden; display: none;" >	
+	Article title 
+	<input type="text" id="articleTitle" class="articleTitle" >
+</div>
+
+</body>
+</html>
