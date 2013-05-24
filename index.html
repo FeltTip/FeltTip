@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+
+<!-- должно вывести: Ошибка 404 / Not Found / -->
+<button onclick="get('badurl', '')">get('badurl', '')</button>
+
+<!-- должно вывести: Ошибка 403 / Forbidden / Извините, доступ запрещён -->
+<button onclick="get('info', 'badpass')">get('info', 'badpass')</button>
+
+<!-- должно вывести: Добро пожаловать! -->
+<button onclick="get('info', 'password')">get('info', 'password')</button>
+
+<script>
+function get(url, password) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url, true);
+	xhr.setRequestHeader('Authorization', password);
+
+	xhr.onreadystatechange = function() {
+		if (this.readyState != 4) return;
+
+		if (this.status != 200) {
+			alert('Ошибка ' + this.status + ' / ' + this.statusText + ' / ' + this.responseText);
+			return;
+		}
+
+		alert(this.responseText);
+	}
+
+	xhr.send('');
+}
+</script>
+
+
+</body>
+</html>

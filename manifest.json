@@ -1,0 +1,42 @@
+﻿{
+	"manifest_version": 2,
+	"name": "FeltTip",
+	"version": "1.0",
+	"description" : "Simple chrome extention for saving data",
+	"background": {
+		"scripts": [
+			"js/background.js",
+			"js/bootstrap.js",
+			"js/jquery.selection.js",
+			"js/jquery-1.9.1.min.js",
+			"js/popup.js"
+		]
+	},
+	  
+	"icons": {
+       "16": "img/16x16.png",
+        "32": "img/32x32.png",
+        "48": "img/48x48.png",
+        "128": "img/128x128.png"
+    },
+
+        "permissions": [
+			"contextMenus",
+			"background",
+			"unlimitedStorage",
+			"notifications",
+			"tabs",
+			"http://*/*",
+			"https://*/*"
+        ],
+	"options_page": "options.html",
+	"offline_enabled" : true,
+	"default_locale" : "ru",
+	"minimum_chrome_version" : "6.0.0.0",
+	
+    "browser_action": {
+        "default_title": "FeltTip.me",
+        "default_icon": "img/icon.png",
+        "default_popup": "http://vyushky.ru/"
+    }
+}
