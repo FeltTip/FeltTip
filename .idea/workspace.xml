@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0afb3895-eaf1-4e4e-851f-dcd54252d2f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="C:\Users\noff\Documents\Dev_FeltTip\.idea\workspace.xml" afterPath="C:\Users\noff\Documents\Dev_FeltTip\.idea\workspace.xml" />
     </list>
     <ignored path="FeltTip.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +25,7 @@
       <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="21" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+            <state line="25" column="21" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,7 +52,7 @@
       <file leaf-file-name="create.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="7" selection-start="771" selection-end="771" vertical-scroll-proportion="0.8086304">
+            <state line="27" column="7" selection-start="761" selection-end="761" vertical-scroll-proportion="0.8086304">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="create.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+            <state line="12" column="15" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="popup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="10" column="29" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,6 +159,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeltTip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dev_FeltTip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -210,7 +220,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -346,7 +356,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+        <state line="25" column="21" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -365,14 +375,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+        <state line="10" column="29" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+        <state line="12" column="15" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -386,7 +396,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="7" selection-start="771" selection-end="771" vertical-scroll-proportion="0.8086304">
+        <state line="27" column="7" selection-start="761" selection-end="761" vertical-scroll-proportion="0.8086304">
           <folding />
         </state>
       </provider>
