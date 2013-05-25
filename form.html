@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Resource params </title>
-<script src="js/form.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/form.css">
+	<title> Resource params </title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
 <form action="#">
-
-<!--<p>Resource type:<td>
-		<select id="resource_type" name="resource_type" onchange="resource_type(this);">
-			<option value="article">Article</option>
-			<option value="book">Book</option>
-			<option value="internet">Internet</option>
+ <ul class="nav nav-pills">
+    <li class="active"><a href="#tab1" data-toggle="tab"></a></li>
+    <li><a href="#tab2" data-toggle="tab"></a></li>
+	<li><a href="#tab3" data-toggle="tab"></a></li>
+</ul>
+<p>Choose doument:</p>
+		<select id="resource_type" name="resource_type">
+			<option value="article">Doc 1</option>
+			<option value="book">Doc 2</option>
+			<option value="internet">Doc 3</option>
 		</select>
-&nbsp </br>
--->
+
 <div class="tabbable"> 
   <ul class="nav nav-pills">
     <li class="active"><a href="#tab1" data-toggle="tab">Articles & Magazines</a></li>
@@ -98,5 +99,8 @@
 </div>
 
 </form>
+    <script src="js/jquery-2.0.1.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

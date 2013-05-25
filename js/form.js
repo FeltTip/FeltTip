@@ -1,4 +1,4 @@
-/*
+
 document.onready = function(){
 	this.getElementById('resource_type').onchange = function(obj) {
 	if (obj.value=="book") {
@@ -18,4 +18,4 @@ document.onready = function(){
     }	
 	}
 }
-*/
+
