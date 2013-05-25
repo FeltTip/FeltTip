@@ -4,11 +4,7 @@
     "version":"1.0",
     "description":"Simple chrome extention for saving data",
     "background":{
-        "scripts":[
-            "js/background.js",
-            "js/jquery.js",
-            "js/popup.js"
-        ]
+        "page":"background.html"
     },
 
     "icons":{
@@ -20,16 +16,13 @@
 
     "permissions":[
         "contextMenus",
-        "background",
         "unlimitedStorage",
         "notifications",
         "tabs",
         "http://*/*",
         "https://*/*"
     ],
-    "options_page":"options.html",
     "offline_enabled":true,
-    "default_locale":"ru",
     "minimum_chrome_version":"6.0.0.0",
 
     "browser_action":{

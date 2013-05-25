@@ -1,50 +1,8 @@
-function createMenu() {
-    var urls = [
-        "*://*.google.com/*",
-        "*://*.google.ru/*"
-    ];
-    
-    var root = chrome.contextMenus.create({
-        title: "Mark as",
-        contexts: [ "link", "selection" ],
-        documentUrlPatterns: urls
-    });
-    
-    chrome.contextMenus.create({
-        title: "Green",
-        contexts: [ "link", "selection" ],
-        parentId: root,
-        documentUrlPatterns: urls,
-        onclick: function(info, tab) {
-            chrome.tabs.executeScript(tab.id, { 
-                code: "googleMarker.markUrl('" + info.linkUrl + "', 'green')" 
-            });
-        }
-    });
-    
-    chrome.contextMenus.create({
-        title: "Yellow",
-        contexts: [ "link", "selection" ],
-        parentId: root,
-        documentUrlPatterns: urls,
-        onclick: function(info, tab) {
-            chrome.tabs.executeScript(tab.id, { 
-                code: "googleMarker.markUrl('" + info.linkUrl + "', 'yellow')" 
-            });
-        }
-    });
-    
-    chrome.contextMenus.create({
-        title: "Red",
-        contexts: [ "link", "selection" ],
-        parentId: root,
-        documentUrlPatterns: urls,
-        onclick: function(info, tab) {
-            chrome.tabs.executeScript(tab.id, { 
-                code: "googleMarker.markUrl('" + info.linkUrl + "', 'red')"
-            });
-        }
-    });
-}
+<html>
+<head>
+    <title></title>
+</head>
+<body>
 
-createMenu();
+</body>
+</html>
