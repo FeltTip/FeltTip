@@ -1,5 +1,10 @@
-document.onready = function(){
-    console.log(CKEDITOR);
-    CKEDITOR.disableAutoInline = true;
-    CKEDITOR.inline( 'editable' );
+document.onready = function () {
+    var opts = {
+        lang:'en', // set your language
+        styleWithCSS:false,
+        height:400,
+        toolbar:'maxi'
+    };
+    // create editor
+    $('#content').elrte(opts);
 };
