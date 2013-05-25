@@ -2,25 +2,98 @@
 <head>
 <title> Resource params </title>
 <script src="js/form.js"></script>
-
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
+<form action="#">
 
-<tr>
-    <td><p>Resource type:<td>
-    <td>
-		<select name="resource_type" onchange="resource_type(this);">
+<!--<p>Resource type:<td>
+		<select id="resource_type" name="resource_type" onchange="resource_type(this);">
 			<option value="article">Article</option>
 			<option value="book">Book</option>
 			<option value="internet">Internet</option>
 		</select>
-	</td>
-</tr>
+&nbsp </br>
+-->
+<div class="tabbable"> 
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#tab1" data-toggle="tab">Articles & Magazines</a></li>
+    <li><a href="#tab2" data-toggle="tab">Books</a></li>
+	<li><a href="#tab3" data-toggle="tab">Internet sources</a></li>
+	<li><a href="#tab4" data-toggle="tab">Legal acts</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+			<div id="articleTitle">
+				Article author  </br>
+				<input  type="text" class="span2" id="author"></div></br>
 
-<div id="articleName" class="articleName" style="visibility: hidden; display: none;" >	
-	Article title 
-	<input type="text" id="articleTitle" class="articleTitle" >
+			<div id="articleTitle">
+				Article title </br>
+				<input  type="text" class="span2" id="title"></div></br>
+				
+			<div id="articleTitle">
+				Year of publication </br>
+				<input type="text" class="span2" id="year"></div></br>
+
+			<div id="articleTitle">
+				Publisher  </br>
+				<input  type="text" class="span2" id="publisher"></div></br>
+    </div>
+    <div class="tab-pane" id="tab2">
+			<div id="articleTitle">
+				Book author  </br>
+				<input  type="text" class="span2" id="author"></div></br>
+
+			<div id="articleTitle">
+				Book title </br>
+				<input  type="text" class="span2" id="title"></div></br>
+				
+			<div id="articleTitle">
+				Year of publication </br>
+				<input type="text" class="span2" id="year"></div></br>
+
+			<div id="articleTitle">
+				Publisher  </br>
+				<input  type="text" class="span2" id="publisher"></div></br>
+    </div>
+    <div class="tab-pane" id="tab3">
+			<div id="articleTitle">
+				Resource author  </br>
+				<input  type="text" class="span2" id="author"></div></br>
+
+			<div id="articleTitle">
+				Resource title </br>
+				<input  type="text" class="span2" id="title"></div></br>
+				
+			<div id="articleTitle">
+				Year of publication </br>
+				<input type="text" class="span2" id="year"></div></br>
+    </div>
+    <div class="tab-pane" id="tab4">
+			<div id="articleTitle">
+				Article author  </br>
+				<input  type="text" class="span2" id="author"></div></br>
+
+			<div id="articleTitle">
+				Article title </br>
+				<input  type="text" class="span2" id="title"></div></br>
+				
+			<div id="articleTitle">
+				Year of publication </br>
+				<input type="text" class="span2" id="year"></div></br>
+
+			<div id="articleTitle">
+				Publisher  </br>
+				<input  type="text" class="span2" id="publisher"></div></br>
+    </div>
+  </div>
+  <input name="Submit" type=submit class=btn value="Send data to FeltTip">
 </div>
 
+</form>
 </body>
 </html>

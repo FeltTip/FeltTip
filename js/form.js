@@ -1,6 +1,6 @@
-function resource_type(obj)
-{
-    if (obj.value=="book") {
+document.onready = function(){
+	this.getElementById('resource_type').onchange = function(obj) {
+	if (obj.value=="book") {
         articleName = document.getElementById("articleName");
         articleName.style.visibility = "visible";
         articleName.style.display = "block";
@@ -15,4 +15,5 @@ function resource_type(obj)
         articleName.style.visibility = "invisible";
         articleName.style.display = "none";
     }	
+	}
 }
