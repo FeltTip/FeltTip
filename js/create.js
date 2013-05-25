@@ -8,17 +8,18 @@ $(document).ready(function(){
         }
 
         if (createFile(name) != false) {
-            alert('Ok');
+            chrome.tabs.getCurrent(function(tab){
+                chrome.tabs.update(tab.id, {url: 'edit.html'});
+            });
         }
     });
 });
 
 function createFile(name) {
-    if (typeof localStorage.files === "undefined") {
-        localStorage.files = {};
-    }
-    if (typeof localStorage.files[name] === "undefined") {
-        localStorage.files[name] = {content: ''};
+    if (typeof localStorage[name] === "undefined") {
+        var file = JSON.stringify({content: '', quotes: []});
+
+        localStorage[name] = file;
     }
     else {
         alert('File ' + name + ' is already exists');

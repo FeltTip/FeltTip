@@ -6,4 +6,10 @@
         });
         return false;
     });
+
+    if (localStorage.length > 0) {
+        for (file in localStorage) {
+            $('#files').append('<li>'+file+'</li>');
+        }
+    }
 });
