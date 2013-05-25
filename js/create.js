@@ -9,7 +9,7 @@ $(document).ready(function(){
 
         if (createFile(name) != false) {
             chrome.tabs.getCurrent(function(tab){
-                chrome.tabs.update(tab.id, {url: 'edit.html'});
+                chrome.tabs.update(tab.id, {url: 'edit.html?file='+name});
             });
         }
     });
