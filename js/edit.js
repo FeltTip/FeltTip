@@ -16,7 +16,7 @@ document.onready = function () {
         var quote = file.quotes[i];
         $('#quotes').append('<div class="quote-block">&rdquo; <div class="quote">'
             + quote.quote + '</div>&rdquo;' +
-            '<div class="quote-link">' + quote.author + '. ' + quote.title + ': ' + quote.source + ' (' + quote.year + ')</div>' +
+            '<div class="quote-link">' + quote.author + '. ' + quote.title + ' // ' + quote.name + ': ' + quote.source + ' (' + quote.year + ')</div>' +
             '</div>');
     }
 

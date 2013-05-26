@@ -24,6 +24,7 @@ document.onready = function(){
         var tab = $('.tab-pane.active ');
         var author = $(tab).find('input[name="author"]').val();
         var title = $(tab).find('input[name="title"]').val();
+        var name = $(tab).find('input[name="name"]').val();
         var year = $(tab).find('input[name="year"]').val();
         var publisher = $(tab).find('input[name="publisher"]').val();
         var quote = $('#quote').html();
@@ -34,6 +35,7 @@ document.onready = function(){
             quote: quote,
             source: source,
             author: author,
+            name: name,
             title: title,
             year: year,
             publisher: publisher
