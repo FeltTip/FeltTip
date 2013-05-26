@@ -13,7 +13,7 @@ document.onready = function () {
     var file = JSON.parse(localStorage[fileName]);
     $('#content').elrte('val', file.content);
     for (var i = 0; i < file.quotes.length; i++) {
-        $('#quotes').append('<div>'+file.quotes[i].quote+'</div>');
+        $('#quotes').append('&rdquo; <div>'+file.quotes[i].quote+'</div>&rdquo;');
     }
     $('.save').on('click', function(){
         file.content = $('#content').elrte('val');
