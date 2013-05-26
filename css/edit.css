@@ -4,5 +4,27 @@
 
 #quotes {
     width: 350px;
+    padding: 5px;
     float: left;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+
+.quote-block {
+    padding: 5px;
+    border: 1px dashed black;
+    margin: 10px 0px;
+}
+
+.quote-block.active {
+    border: 1px dashed #0aa0ff;
+    //background-color: #e2fffa;
+}
+
+.quote-link {
+    word-wrap: break-word;
+}
+
+.header {
+    margin-bottom: 20px;
 }

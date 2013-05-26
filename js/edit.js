@@ -13,11 +13,31 @@ document.onready = function () {
     var file = JSON.parse(localStorage[fileName]);
     $('#content').elrte('val', file.content);
     for (var i = 0; i < file.quotes.length; i++) {
-        $('#quotes').append('&rdquo; <div>'+file.quotes[i].quote+'</div>&rdquo;');
+        var quote = file.quotes[i];
+        $('#quotes').append('<div class="quote-block">&rdquo; <div class="quote">'
+            + quote.quote + '</div>&rdquo;' +
+            '<div class="quote-link">' + quote.author + '. ' + quote.title + ': ' + quote.source + ' (' + quote.year + ')</div>' +
+            '</div>');
     }
-    $('.save').on('click', function(){
+
+    this.title = '"' + fileName + '"' + document.title;
+    $('#quotes').css('height', window.innerHeight - 50 + 'px');
+
+    $('.save').on('click', function () {
         file.content = $('#content').elrte('val');
         localStorage[fileName] = JSON.stringify(file);
         return false;
+    });
+
+    $('.quote, .quote-link').on('click', function () {
+        var selection, range;
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents(this);
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        $('.quote-block.active').removeClass('active');
+        $(this).parent('.quote-block').addClass('active');
     });
 };

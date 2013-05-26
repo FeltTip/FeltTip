@@ -10,9 +10,9 @@ document.onready = function(){
     $('#quote').html(quote);
     var shortLink = source;
     if (source.length > 60) {
-        shortLink = shortLink.substr(0, 59);
+        shortLink = shortLink.substr(0, 59) + '...';
     }
-    $('#source').html('<a href="' + source + '" target="_blank" >' + shortLink + '...</a>');
+    $('#source').html('<a href="' + source + '" target="_blank" >' + shortLink + '</a>');
 
     $('#send').on('click', function(){
         var fileName = $('#file').val();
@@ -27,7 +27,6 @@ document.onready = function(){
         var year = $(tab).find('input[name="year"]').val();
         var publisher = $(tab).find('input[name="publisher"]').val();
         var quote = $('#quote').html();
-        var source = $('#source').html();
 
         var file = JSON.parse(localStorage[fileName]);
         var key = file.quotes.length;

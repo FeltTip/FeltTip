@@ -2,7 +2,7 @@
     "manifest_version":2,
     "name":"FeltTip",
     "version":"1.0",
-    "description":"Simple chrome extention for saving data",
+    "description":"Instrument for save the quotes in documents",
     "background":{
         "page":"background.html"
     },
