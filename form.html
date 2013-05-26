@@ -1,106 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Resource params </title>
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/form.css">
+    <title> Resource params </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <script src="js/jquery-2.0.1.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
 <body>
-<form action="#">
- <ul class="nav nav-pills">
-    <li class="active"><a href="#tab1" data-toggle="tab"></a></li>
-    <li><a href="#tab2" data-toggle="tab"></a></li>
-	<li><a href="#tab3" data-toggle="tab"></a></li>
-</ul>
-<p>Choose doument:</p>
-		<select id="resource_type" name="resource_type">
-			<option value="article">Doc 1</option>
-			<option value="book">Doc 2</option>
-			<option value="internet">Doc 3</option>
-		</select>
+<div class="tabbable">
+    <p>Choose doument:</p>
+    <select id="file" name="file">
+        <option value=""> -- Choose --</option>
+    </select>
+    <p>Quote text:</p>
+    <div id="quote"></div>
+    <p>Source:</p>
+    <div id="source"></div>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#tab1" data-toggle="tab">Articles & Magazines</a></li>
+        <li><a href="#tab2" data-toggle="tab">Books</a></li>
+        <li><a href="#tab3" data-toggle="tab">Internet sources</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+            <div class="articleTitle">
+                Article author  </br>
+                <input type="text" class="span2" name="author"></div>
+            </br>
 
-<div class="tabbable"> 
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#tab1" data-toggle="tab">Articles & Magazines</a></li>
-    <li><a href="#tab2" data-toggle="tab">Books</a></li>
-	<li><a href="#tab3" data-toggle="tab">Internet sources</a></li>
-<!--	<li><a href="#tab4" data-toggle="tab">Legal acts</a></li> -->
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane active" id="tab1">
-			<div id="articleTitle">
-				Article author  </br>
-				<input  type="text" class="span2" id="author"></div></br>
+            <div class="articleTitle">
+                Article title </br>
+                <input type="text" class="span2" name="title"></div>
+            </br>
 
-			<div id="articleTitle">
-				Article title </br>
-				<input  type="text" class="span2" id="title"></div></br>
-				
-			<div id="articleTitle">
-				Year of publication </br>
-				<input type="text" class="span2" id="year"></div></br>
+            <div class="articleTitle">
+                Year of publication </br>
+                <input type="text" class="span2" name="year"></div>
+            </br>
 
-			<div id="articleTitle">
-				Publisher  </br>
-				<input  type="text" class="span2" id="publisher"></div></br>
+            <div class="articleTitle">
+                Publisher  </br>
+                <input type="text" class="span2" name="publisher"></div>
+            </br>
+        </div>
+        <div class="tab-pane" id="tab2">
+            <div class="articleTitle">
+                Book author  </br>
+                <input type="text" class="span2" name="author"></div>
+            </br>
+
+            <div class="articleTitle">
+                Book title </br>
+                <input type="text" class="span2" name="title"></div>
+            </br>
+
+            <div class="articleTitle">
+                Year of publication </br>
+                <input type="text" class="span2" name="year"></div>
+            </br>
+
+            <div class="articleTitle">
+                Publisher  </br>
+                <input type="text" class="span2" name="publisher"></div>
+            </br>
+        </div>
+        <div class="tab-pane" id="tab3">
+            <div class="articleTitle">
+                Resource author  </br>
+                <input type="text" class="span2" name="author"></div>
+            </br>
+
+            <div class="articleTitle">
+                Resource title </br>
+                <input type="text" class="span2" name="title"></div>
+            </br>
+
+            <div class="articleTitle">
+                Year of publication </br>
+                <input type="text" class="span2" name="year"></div>
+            </br>
+        </div>
     </div>
-    <div class="tab-pane" id="tab2">
-			<div id="articleTitle">
-				Book author  </br>
-				<input  type="text" class="span2" id="author"></div></br>
 
-			<div id="articleTitle">
-				Book title </br>
-				<input  type="text" class="span2" id="title"></div></br>
-				
-			<div id="articleTitle">
-				Year of publication </br>
-				<input type="text" class="span2" id="year"></div></br>
-
-			<div id="articleTitle">
-				Publisher  </br>
-				<input  type="text" class="span2" id="publisher"></div></br>
-    </div>
-    <div class="tab-pane" id="tab3">
-			<div id="articleTitle">
-				Resource author  </br>
-				<input  type="text" class="span2" id="author"></div></br>
-
-			<div id="articleTitle">
-				Resource title </br>
-				<input  type="text" class="span2" id="title"></div></br>
-				
-			<div id="articleTitle">
-				Year of publication </br>
-				<input type="text" class="span2" id="year"></div></br>
-    </div>
-<!--    <div class="tab-pane" id="tab4">
-			<div id="articleTitle">
-				Article author  </br>
-				<input  type="text" class="span2" id="author"></div></br>
-
-			<div id="articleTitle">
-				Article title </br>
-				<input  type="text" class="span2" id="title"></div></br>
-				
-			<div id="articleTitle">
-				Year of publication </br>
-				<input type="text" class="span2" id="year"></div></br>
-
-			<div id="articleTitle">
-				Publisher  </br>
-				<input  type="text" class="span2" id="publisher"></div></br>
-    </div>
--->
-  </div>
-
-<button class="btn" >Send data to FeltTip</button>
+    <button class="btn" id="send">Send data to FeltTip</button>
 
 </div>
-
-</form>
-    <script src="js/jquery-2.0.1.js"></script>
-	<script src="js/form.js"></script>
-	<script src="js/bootstrap.js"></script>
 </body>
 </html>
